@@ -1,0 +1,16 @@
+package com.netty.demo.codec.protobuf;
+option java_package="com.netty.demo.codec.protobuf";
+option java_outer_classname = "SubscribeProto";
+
+message SubscribeReq {
+	required int32 id = 1;
+	required string userName = 2;
+	required string productName = 3;
+	required string address = 4;
+}
+
+message SubscribeResp {
+	required int32 id = 1;
+	required int32 respCode = 2;
+	required string message = 4;
+}
